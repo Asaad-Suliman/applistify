@@ -1,4 +1,3 @@
-cat > README.md << 'EOF'
 # AppListify
 
 AI-powered App Store Listing Optimizer. Paste your app details, get 3 optimized listing variants — title, subtitle, description, keywords, and screenshot copy — ready to publish.
@@ -14,9 +13,4 @@ AI-powered App Store Listing Optimizer. Paste your app details, get 3 optimized 
 - [System Design](./SYSTEM_DESIGN.md)
 
 ## Getting Started
-_Coming soon as the build progresses._
-EOF
-
-git add README.md
-git commit -m "Added README"
-git push
+Coming soon as the build progresses.
