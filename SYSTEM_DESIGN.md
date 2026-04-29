@@ -572,15 +572,13 @@ export async function POST(req: Request) {
   }
 
   // Persist variants
-  await supabase
-    .from("variants")
-    .insert(
-      variants.map((v) => ({
-        ...v,
-        optimization_id: opt.id,
-        user_id: user.id,
-      })),
-    );
+  await supabase.from("variants").insert(
+    variants.map((v) => ({
+      ...v,
+      optimization_id: opt.id,
+      user_id: user.id,
+    })),
+  );
 
   return Response.json({
     optimization_id: opt.id,
